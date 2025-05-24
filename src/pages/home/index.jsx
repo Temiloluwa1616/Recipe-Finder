@@ -7,7 +7,7 @@ export default function Home() {
 
   if (loading) return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-rose-50 to-pink-50">
-      {/* Hero Section Skeleton */}
+     
       <div className="relative overflow-hidden bg-gradient-to-r from-rose-500 to-orange-500">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-6 py-20 relative">
@@ -16,12 +16,12 @@ export default function Home() {
             <div className="h-6 bg-white/20 rounded w-1/2 mx-auto animate-pulse"></div>
           </div>
         </div>
-        {/* Decorative elements */}
+        
         <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
       </div>
 
-      {/* Recipe Grid Skeleton */}
+      
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {[...Array(8)].map((_, i) => (
