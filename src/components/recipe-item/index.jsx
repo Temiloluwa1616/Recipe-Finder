@@ -5,7 +5,7 @@ export default function RecipeItem({ item }) {
   console.log("Recipe Item Data:", item);
 
   return (
-    <div className="group relative w-80 overflow-hidden rounded-2xl bg-white shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+    <div className="group relative w-70 overflow-hidden rounded-2xl bg-white shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
       <div className="h-60 overflow-hidden">
         <img 
           src={item?.image_url} 
