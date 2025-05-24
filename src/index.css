@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Add your custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+/* Create utility classes for your animations */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Optional: Add these to Tailwind's animation utilities */
+@layer utilities {
+  .animation-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+  .animation-bounce {
+    animation: bounce 2s infinite;
+  }
+}
